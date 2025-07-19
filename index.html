@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milestone Sportz & Events - World-Class Sports Event Management</title>
+<meta name="description" content="Milestone Sportz & Event is a leader in cricket event management, known for executing large-scale tournaments and sports experiences with precision and global reach.">
+
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Cursor -->
+  <style>
+    * { cursor: none !important; }
+    #custom-cursor { 
+      position: fixed; 
+      width: 20px; 
+      height: 20px; 
+      background: #00ff88; 
+      border-radius: 50%; 
+      pointer-events: none; 
+      z-index: 10000; 
+      transition: transform 0.1s ease; 
+      mix-blend-mode: difference;
+    }
+    #custom-cursor.hover { transform: scale(2); background: #f4d03f; }
+  </style>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+  
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <div class="cricket-ball-loader">
+        <div class="ball">
+          <div class="seam"></div>
+          <div class="seam"></div>
+        </div>
+      </div>
+      <h1 class="loading-title">Milestone Sportz & Events</h1>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header glassmorphism">
+    <div class="container">
+      <div class="header-content">
+        <a href="#home" class="logo">
+          <img src="https://iili.io/F7z0YxI.md.png" class="nav-logo" alt="logo">
+          <h1>Milestone Sportz & Events</h1>
+        </a>
+        
+        <nav class="nav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#team" class="nav-link">Team</a>
+          <a href="#contact" class="nav-link">Gallery</a>
+          <a href="#contact" class="nav-link">Blogs</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-cricket-players-in-a-match-44529-large.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="particles-container">
+      <canvas id="particles-canvas"></canvas>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge floating">
+          
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="title-line">Defining Sports,</span>
+          <span class="title-line gradient-text">Delivering Excellence.</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          A premier management company dedicated to creating, managing, and executing world-class sporting events and corporate experiences.
+        </p>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="26">0</span>
+            <span class="stat-label">Event Delivered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="7">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="1000">0</span>
+            <span class="stat-label">Participants Engaged</span>
+          </div>
+        </div>
+        
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <span>Plan Your Event</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <button class="btn btn-secondary" id="play-showreel">
+            <i class="fas fa-play"></i>
+            <span>Watch Showreel</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">About Milestone Sportz</div>
+        <h2 class="section-title">Setting the Standard in Sports Excellence</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="about-text">
+            <p class="lead">Founded on a passion for sport and a commitment to perfection, Milestone brings together decades of industry experience.</p>
+            
+            <div class="company-info">
+              <div class="info-item">
+                <strong>Founded:</strong> 2018
+              </div>
+              <div class="info-item">
+                <strong>Headquarters:</strong> Delhi
+              </div>
+              <div class="info-item">
+                <strong>Team:</strong> 150+ Experts
+              </div>
+            </div>
+          </div>
+          
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Our Story</h4>
+              <p>Creating unforgettable sporting experiences that inspire and leave a lasting impact.</p>
+            </div>
+            
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h4>Our Vision</h4>
+              <p>Turning every idea into a celebrated success through passion and precision.</p>
+            </div>
+            
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h4>Our Promise</h4>
+              <p>Delivering excellence with creativity, detail, and unwavering dedication.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual">
+          <div class="video-container">
+            <div class="video-placeholder">
+              <i class="fas fa-play-circle"></i>
+              <span>Experience Our Story</span>
+            </div>
+          </div>
+          
+          <div class="floating-stats">
+            <div class="floating-stat">
+              <span class="number">₹4Cr+</span>
+              <span class="label">Total Event Value</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Expertise</div>
+        <h2 class="section-title">Premium Sports Solutions</h2>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card" data-service="tournament">
+          <div class="service-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Sports Event Management</h3>
+          <p>Complete tournament organization, from amateur leagues to professional championships, ensuring seamless execution.</p>
+          <ul class="service-features">
+            <li>End-to-End Tournament Planning</li>
+            <li>On-Ground Operations Team</li>
+            <li>Sponsorship Coordination</li>
+            <li>Real-Time Match Scheduling</li>
+          </ul>
+          <div class="service-hover-effect"></div>
+        </div>
+        
+        <div class="service-card" data-service="fan-experience">
+          <div class="service-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Media & Production</h3>
+          <p>Full-service media including live streaming, broadcast management, and content creation for maximum event impact.</p>
+          <ul class="service-features">
+            <li>Live Streaming</li>
+            <li>Multi-Camera</li>
+            <li>Reels & Highlights</li>
+            <li>Commentary Integration</li>
+           
+          </ul>
+          <div class="service-hover-effect"></div>
+        </div>
+        
+        <div class="service-card" data-service="corporate">
+          <div class="service-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Corporate Events</h3>
+          <p>Elevate your brand with expertly crafted corporate sporting events, team building activities, and executive tournaments.</p>
+          <ul class="service-features">
+            <li>Team Building</li>
+            <li>Networking Events</li>
+            <li>Brand Activation</li>
+            <li>Executive Tournaments</li>
+          </ul>
+          <div class="service-hover-effect"></div>
+        </div>
+        
+        <div class="service-card" data-service="venue">
+          <div class="service-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Venue & Infrastructure</h3>
+          <p>Complete venue transformation with world-class facilities, advanced technology integration, and premium hospitality.</p>
+          <ul class="service-features">
+            <li>Stadium Design</li>
+            <li>Tech Integration</li>
+            <li>Premium Hospitality</li>
+            <li>Logistics Management</li>
+          </ul>
+          <div class="service-hover-effect"></div>
+        </div>
+        
+        <div class="service-card" data-service="media">
+          <div class="service-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>Immersive Fan Experiences</h3>
+          <p>Revolutionary fan engagement through AR/VR technologies, interactive zones, and personalized digital experiences.</p>
+          <ul class="service-features">
+             <li>Mobile Apps</li>
+            <li>Social Media</li>
+            <li>Virtual Stadium Tours</li>
+            <li>Live Reaction Wall</li>
+            
+          </ul>
+          <div class="service-hover-effect"></div>
+        </div>
+        
+        <div class="service-card" data-service="analytics">
+          <div class="service-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Analytics & Intelligence</h3>
+          <p>Advanced Sports analytics, real-time performance tracking, fan behavior insights, and comprehensive reporting.</p>
+          <ul class="service-features">
+            <li>Performance Analytics</li>
+            <li>Fan Insights</li>
+            <li>Real-time Data</li>
+            <li>Intelligence Reports</li>
+          </ul>
+          <div class="service-hover-effect"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Work</div>
+        <h2 class="section-title">Signature Events & Achievements</h2>
+      </div>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="corporate">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&h=400&fit=crop" alt="IPL Corporate Championship" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <h3>IPL Corporate Championship 2024</h3>
+                <p>32-team corporate cricket championship featuring Fortune 500 companies</p>
+                <div class="portfolio-stats">
+                  <span>32 Teams</span>
+                  <span>₹25Cr Value</span>
+                  <span>50k+ Attendance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="celebrity">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop" alt="Mumbai Legends Celebrity Cup" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <h3>Mumbai Legends Celebrity Cup</h3>
+                <p>Star-studded cricket gala raising ₹10 Crores for charity with global broadcast</p>
+                <div class="portfolio-stats">
+                  <span>20 Celebrities</span>
+                  <span>₹10Cr Raised</span>
+                  <span>50M+ Viewers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="industry">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop" alt="Tech Titans Cricket League" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <h3>Tech Titans Cricket League</h3>
+                <p>Premier tech industry cricket league featuring startup unicorns and tech giants</p>
+                <div class="portfolio-stats">
+                  <span>24 Companies</span>
+                  <span>156 Matches</span>
+                  <span>₹2Cr Prize</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="educational">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop" alt="International Schools Championship" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <h3>International Schools Championship</h3>
+                <p>Prestigious inter-school cricket championship spanning 8 countries</p>
+                <div class="portfolio-stats">
+                  <span>200 Schools</span>
+                  <span>8 Countries</span>
+                  <span>5000+ Students</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Leadership</div>
+        <h2 class="section-title">Meet Our Visionary Team</h2>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Arjun Malhotra" loading="lazy">
+            <div class="member-overlay">
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Arjun Malhotra</h3>
+            <p class="member-role">Founder & Chief Visionary</p>
+            <p class="member-bio">Former Indian team manager with 20+ years in international cricket and Fortune 500 sports marketing experience.</p>
+            <div class="member-expertise">
+              <span>Strategic Leadership</span>
+              <span>International Cricket</span>
+              <span>Corporate Partnerships</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b29c?w=400&h=400&fit=crop&crop=face" alt="Kavya Reddy" loading="lazy">
+            <div class="member-overlay">
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Kavya Reddy</h3>
+            <p class="member-role">Chief Operating Officer</p>
+            <p class="member-bio">Operations mastermind specializing in large-scale international sporting events and premium hospitality management.</p>
+            <div class="member-expertise">
+              <span>Event Operations</span>
+              <span>Premium Hospitality</span>
+              <span>Global Logistics</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="Rohit Sharma" loading="lazy">
+            <div class="member-overlay">
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Rohit Sharma</h3>
+            <p class="member-role">Chief Technology Officer</p>
+            <p class="member-bio">Technology innovator pioneering AR/VR in sports, advanced analytics, and next-generation fan engagement platforms.</p>
+            <div class="member-expertise">
+              <span>AR/VR Technology</span>
+              <span>Sports Analytics</span>
+              <span>Digital Innovation</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face" alt="Priya Patel" loading="lazy">
+            <div class="member-overlay">
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3>Priya Patel</h3>
+            <p class="member-role">Head of Creative Excellence</p>
+            <p class="member-bio">Creative genius behind award-winning cricket experiences, brand activations, and immersive fan engagement strategies.</p>
+            <div class="member-expertise">
+              <span>Creative Strategy</span>
+              <span>Brand Activation</span>
+              <span>Fan Engagement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section class="clients section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Trusted Partners</div>
+        <h2 class="section-title">Companies Trust Us</h2>
+      </div>
+      
+      <div class="clients-carousel">
+        <div class="client-track">
+          <div class="client-logo">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cricuspl.com%2Fsponsorships%2Ffancode-logo-2022_fancode-orangeontransarent%2F&psig=AOvVaw0aPZAaodzqeAKV4qd9_0_E&ust=1753027449891000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKC9zqWmyY4DFQAAAAAdAAAAABAE" alt="Fancode" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://www.cricuspl.com/wp-content/uploads/2024/11/FanCode-Logo-2022_FanCode-OrangeOnTransarent.png" alt="Fancode" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="	https://d25s2jqw4qdf1e.cloudfront.net/6be225e7-2268-4a64-86d3-f240a91856d6.png" alt="SportVot" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://foretitansevents.com/home/images/spo4.png" alt="Foretitan" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://pixello.co.in/wp-content/uploads/2024/06/sony-liv-svgrepo-com.svg" alt="Sony Liv" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://tva.onscreenasia.com/wp-content/uploads/2024/05/JioCinema-Logo-2.png" alt="Jio Cinema" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://via.placeholder.com/160x80/ffffff/1a5d1a?text=WIPRO" alt="Wipro Limited" loading="lazy">
+          </div>
+          <div class="client-logo">
+            <img src="https://via.placeholder.com/160x80/ffffff/1a5d1a?text=BAJAJ" alt="Bajaj Group" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Testimonials</div>
+        <h2 class="section-title">What Leaders Say About Us</h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <blockquote>
+              "Milestone Sportz & Events delivered an extraordinary corporate tournament that exceeded all our expectations. Their attention to detail and premium execution is unmatched."
+            </blockquote>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=150&h=150&fit=crop&crop=face" alt="Mukesh Ambani" loading="lazy">
+            <div class="author-info">
+              <h4>Mukesh Ambani</h4>
+              <p>Chairman, Reliance Industries</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <blockquote>
+              "Working with Milestone Sportz & Events has been incredible. They understand sports at the highest level and create experiences that truly honor the game."
+            </blockquote>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1549068106-b024baf5062d?w=150&h=150&fit=crop&crop=face" alt="Virat Kohli" loading="lazy">
+            <div class="author-info">
+              <h4>Virat Kohli</h4>
+              <p>Cricket Legend & Brand Ambassador</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Get in Touch</div>
+        <h2 class="section-title">Ready to Create Sports History?</h2>
+        <h4 style = 'font-weight: 100;'>Ready to create your next milestone event? Let's discuss how we can bring your vision to life.</h4>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                <span class="form-line"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <span class="form-line"></span>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+                <span class="form-line"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+                <span class="form-line"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="event-type">Event Type</label>
+              <select id="event-type" name="event-type">
+                <option value="">Select Event Type</option>
+                <option value="corporate-tournament">Corporate Tournament</option>
+                <option value="celebrity-match">Celebrity Match</option>
+                <option value="fan-engagement">Fan Engagement Event</option>
+                <option value="venue-management">Venue Management</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-line"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-line"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary submit-btn">
+              <span>Send Inquiry</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h4>Our Locations</h4>
+            <p>Tomar Colony, Burari
+Delhi, India 110084
+<!-- <br>Serving clients across India and globally</p> -->
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h4>Phone</h4>
+            <p>+91 82874 14878<br> +91 91285 80613</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h4>Email</h4>
+            <p>imilestone_sports@gmail.com</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h4>Response Time</h4>
+            <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo-text">
+            <img src="https://iili.io/F7z0YxI.md.png" class="footer-logo" alt="">
+            <span class="logo-text"> Milestone Sportz & Events</span>
+          </div>
+          <p>Crafting World-Class Sports Experiences That Define Excellence</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Tournament Management</a></li>
+              <li><a href="#services">Fan Experiences</a></li>
+              <li><a href="#services">Corporate Solutions</a></li>
+              <li><a href="#services">Venue & Infrastructure</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Industries</h4>
+            <ul>
+              <li><a href="#">Corporate Events</a></li>
+              <li><a href="#">Educational Institutions</a></li>
+              <li><a href="#">Sports Organizations</a></li>
+              <li><a href="#">Entertainment Industry</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 Milestone Sportz & Events. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="video-modal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="video-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="video-container">
+        <iframe id="modal-video" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
