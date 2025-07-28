@@ -1300,6 +1300,99 @@ body {
   gap: 2rem;
 }
 
+/*  */
+.value-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.value-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.value-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.value-icon {
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.value-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+.value-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.value-card:hover .value-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://milestone-sportz-management.netlify.app/assets/Banner/Banner.jpg') no-repeat center 18%;
+  background-size: cover;
+  background-attachment: scroll; /* mobile-safe */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .hero {
+    background-position: center 15%; /* tweak between 10–20% */
+  }
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+
+
+
+.hero-video,
+.hero-overlay {
+  display: none !important;
+}
+
+
+/*  */
+
+
 .value-card {
   display: flex;
   gap: 1rem;
